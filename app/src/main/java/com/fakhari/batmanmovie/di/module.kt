@@ -46,7 +46,7 @@ viewModel { MovieDetailViewModel(get()) }
 }
 fun createOkHttpClient(vararg interceptors: Interceptor?): OkHttpClient {
     val httpLoggingInterceptor = HttpLoggingInterceptor()
-    httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+     httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
     val timeout = 30L
     val client = OkHttpClient.Builder()
